@@ -37,7 +37,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % (fonts.length * colors.length * sizes.length));
-    }, 2000);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
